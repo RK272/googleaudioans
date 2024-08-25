@@ -1,0 +1,66 @@
+.center1 {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+  }
+
+  .center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+    display: flex; /* Enables flexbox */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    flex-direction: column; /* Stacks items vertically */
+    border-radius: 5px;
+    background-color: aquamarine;
+}
+
+
+  .flex-container1 {
+    display: flex; /* Ensures that the container behaves like a flex container */
+    gap: 30px; /* Adjusts the gap to 30px, you can set this to any desired value */
+    background-color: lightgreen;
+}
+
+#download-btn {
+    width: 100px; /* Reduced width for the button */
+    padding: 5px 10px; /* Smaller padding for a smaller button */
+    font-size: 12px; /* Adjust font size for the button text */
+    margin: 0 auto; /* Center button horizontally */
+    display: block; /* Allow margin auto centering */
+    background-color: rgb(49, 29, 179); /* Default background color */
+    color: white; /* Optional: Button text color */
+    border: none; /* Optional: Remove border if needed */
+    border-radius: 5px; /* Optional: Rounded corners */
+    cursor: pointer; /* Optional: Cursor changes to pointer on hover */
+}
+
+
+.flex-container {
+    display: flex; /* Flex container */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 30px; /* Space between items */
+    background-color: lightgreen;
+}
+
+#record-btn {
+    width: 100px; /* Reduced width for the button */
+    padding: 5px 10px; /* Smaller padding for a smaller button */
+    font-size: 12px; /* Adjust font size for the button text */
+    margin: 0 auto; /* Center button horizontally */
+    display: block; /* Allow margin auto centering */
+    background-color: rgb(49, 29, 179); /* Default background color */
+    color: white; /* Optional: Button text color */
+    border: none; /* Optional: Remove border if needed */
+    border-radius: 5px; /* Optional: Rounded corners */
+    cursor: pointer; /* Optional: Cursor changes to pointer on hover */
+}
+
+/* Change background color on hover */
+#record-btn:hover {
+    background-color: rgb(255, 99, 71); /* New background color on hover */
+}
