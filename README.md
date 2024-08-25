@@ -76,4 +76,6 @@ sudo apt install tree
 
 speech recogonizatio -- sudo apt-get install portaudio19-dev python-all-dev python3-all-dev && sudo pip install pyaudio
 
+gcloud compute firewall-rules create apppol --allow tcp:8000 --source-ranges=0.0.0.0/0 --description="<your-description-here>"
+
 
