@@ -51,6 +51,22 @@ open up localhost:
 - PaLM2
 - s2t
 - t2s
+##How to Deploy Streamlit app on EC2 instance
 
+1. Login with your AWS console and launch an EC2 instance or google cloud
+2. Run the following commands
+
+1 sudo apt update
+2 sudo apt-get update
+3 sudo apt upgrade -y
+4 sudo apt install git curl unzip tar make sudo vim wget -y
+5 git clone "Your-repository"
+6 sudo apt install python3-pip
+7 #Temporary running
+8 python3 -m streamlit run app.py
+9 #Permanent running
+10 nohup python3 -m streamlit run app.py
+11 #GCP PORT opening
+12 gcloud compute firewall-rules create <policyname> --allow tcp:<port number> --source-ranges=0.0.0.0/0 --description="<your-description-here>"
 
 
