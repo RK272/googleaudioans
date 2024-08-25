@@ -74,3 +74,6 @@ if not execute
 sudo apt install tree
 
 
+speech recogonizatio -- sudo apt-get install portaudio19-dev python-all-dev python3-all-dev && sudo pip install pyaudio
+
+
