@@ -69,4 +69,8 @@ open up localhost:
 11 #GCP PORT opening
 12 gcloud compute firewall-rules create <policyname> --allow tcp:<port number> --source-ranges=0.0.0.0/0 --description="<your-description-here>"
 
+tree 
+if not execute 
+sudo apt install tree
+
 
