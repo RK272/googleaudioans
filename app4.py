@@ -8,7 +8,7 @@ import speech_recognition as sr
 import google.generativeai as genai
 from dotenv import load_dotenv
 import os
-import streamlit as st
+
 from src.helper import voice_input, llm_model_object, text_to_speech
 from fastapi import FastAPI, Request, Form
 from fastapi.responses import JSONResponse
