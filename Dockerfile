@@ -17,10 +17,10 @@ WORKDIR /app
 COPY . /app
 
 # Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Install PyAudio
-RUN pip install --no-cache-dir pyaudio
+RUN pip install pyaudio
 
 # Define the command to run the application
 CMD ["python3", "app4.py"]
