@@ -4,7 +4,8 @@ FROM python:3.10-slim-buster
 RUN apt-get update -y && \
     apt-get install -y --no-install-recommends \
     portaudio19-dev \
-    python3-all-dev && \
+    gcc \
+    python3-dev && \
     rm -rf /var/lib/apt/lists/*
 
 # Install awscli via pip
@@ -17,10 +18,10 @@ WORKDIR /app
 COPY . /app
 
 # Install Python dependencies
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Install PyAudio
-RUN pip install pyaudio
+# Install PyAudio (if still needed separately)
+# RUN pip install --no-cache-dir pyaudio  # Comment this out if pyaudio is already in requirements.txt
 
 # Define the command to run the application
 CMD ["python3", "app4.py"]
